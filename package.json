@@ -1,0 +1,12 @@
+{
+  "name": "mocha-tdd",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --watch test/*.spec.js src/*.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
