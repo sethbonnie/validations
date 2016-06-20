@@ -12,7 +12,9 @@ describe('invalidate(value, message)', () => {
   })
 
   it('returns the original value under the `value` property', () => {
-    expect(result.value).to.equal(originalValue)
+    expect(invalidate(null).value).to.equal(null)
+    expect(invalidate(undefined).value).to.equal(undefined)
+    expect(invalidate("string").value).to.equal("string")
   })
 
   it('returns an object with a `valid` property set to false', () => {

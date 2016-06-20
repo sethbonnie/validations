@@ -4,7 +4,9 @@ export default function validate(value, message) {
     invalid: false
   })
   
-  result.value = value.value ? value.value : value;
+  result.value = (value !== undefined && value !== null && value.value) ? 
+                  value.value : 
+                  value;
 
   return result;
 }

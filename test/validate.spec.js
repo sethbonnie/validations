@@ -4,9 +4,9 @@ import invalidate from '../src/invalidate'
 
 describe('validate(value)', () => {
   it('returns the original value under the `value` property', () => {
-    const value = "original"
-    const result = validate(value)
-    expect(result.value).to.equal(value)
+    expect(validate(null).value).to.equal(null)
+    expect(validate(undefined).value).to.equal(undefined)
+    expect(validate("string").value).to.equal("string")
   })
 
   it('returns an object with a `valid` property set to true', () => {
