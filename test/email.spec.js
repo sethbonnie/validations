@@ -43,6 +43,7 @@ export const invalidEmailAddresses = [
   '“(),:;<>[\]@example.com',
   'just"not"right@example.com',
   'this\ is"really"not\allowed@example.com',
+  'thisisareallylongstringthatexceedstwohundredandfiftyfourcharacters.meaningthatitshouldbeinvalidsince_smtp_onlysupportsuptotwohundredandfiftyfourcharacterssoifthisislongerthanthatthenitshoulddefinitelybeinvalidandreturnaninvalidvaluealongwithasoliddefaulterrormessage@example.com'
 ]
 
 

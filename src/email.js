@@ -8,6 +8,10 @@ export default function validateEmail(email, errorMessage) {
     return invalidate(email, 'Email must be a string')
   }
 
+  if (email.length > 254) {
+    return invalidate(email, 'Email length must be less than 254 characters')
+  }
+
   if (!emailRegex.test(email)) {
     return invalidate(email, errorMessage || 'Invalid email address')
   }
