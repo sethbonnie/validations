@@ -20,6 +20,7 @@ export const validEmailAddresses = [
   'much."more\ unusual"@example.com',
   'very.unusual."@".unusual.com@example.com',
   'very.“(),:;<>[]”.VERY.“very@\\ "very”.unusual@strange.example.com',
+  'example@approved.solutions',
 ]
 
 export const invalidEmailAddresses = [
@@ -36,7 +37,6 @@ export const invalidEmailAddresses = [
   'email@example.com (Joe Smith)',
   'email@example',
   'email@-example.com',
-  'email@example.web',
   'email@111.2222.3333.44444',
   'email@example..com',
   'Abc..123@example.com',
